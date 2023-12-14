@@ -4,7 +4,7 @@ title: Dynamic Game Levels
 description: Early steps in adding levels to an OOP Game.  This includes basic animations left-right-jump, multiple background, and simple callback to terminate each level.
 type: ccc
 courses: { csse: {week: 14}, csp: {week: 14}, csa: {week: 14} }
-image: /images/platformer/backgrounds/hills.png
+image: /images/mario/hills.png
 ---
 
 <style>
@@ -65,24 +65,24 @@ image: /images/platformer/backgrounds/hills.png
     // Define assets for the game
     var assets = {
       obstacles: {
-        tube: { src: "/images/platformer/obstacles/tube.png" },
+        tube: { src: "/images/mario/tube.png" },
       },
       platforms: {
-        grass: { src: "/images/platformer/platforms/pigfarm.png"},
-        alien: { src: "/images/platformer/platforms/alien.png" },
-        carpet: { src: "/images/platformer/platforms/carpet.jpeg"}
+        grass: { src: "/images/mario/pigfarm.png"},
+        alien: { src: "/images/mario/alien.png" },
+        carpet: { src: "/images/mario/carpet.jpeg"}
       },
       backgrounds: {
-        start: { src: "/images/platformer/backgrounds/Joke.jpg" },
-        hills: { src: "/images/platformer/backgrounds/GD_Background.png" },
-        planet: { src: "/images/platformer/backgrounds/Del_Norte.png" },
-        castles: { src: "/images/platformer/backgrounds/castles.png" },
-        end: { src: "/images/platformer/backgrounds/game_over.png" }
+        start: { src: "/images/mario/Joke.jpg" },
+        hills: { src: "/images/mario/GD_Background.png" },
+        planet: { src: "/images/mario/Del_Norte.png" },
+        castles: { src: "/images/mario/backgrounds/castles.png" },
+        end: { src: "/images/mario/backgrounds/game_over.png" }
       },
       players: {
         mario: {
           type: 0,
-          src: "/images/platformer/sprites/mario.png",
+          src: "/images/mario_animation.png",
           width: 256,
           height: 256,
           w: { row: 10, frames: 15 },
@@ -94,7 +94,7 @@ image: /images/platformer/backgrounds/hills.png
         },
         monkey: {
           type: 0,
-          src: "/images/platformer/sprites/monkey.png",
+          src: "/images/mario/monkey.png",
           width: 40,
           height: 40,
           w: { row: 9, frames: 15 },
@@ -106,7 +106,7 @@ image: /images/platformer/backgrounds/hills.png
         },
         lopez: {
           type: 1,
-          src: "/images/platformer/sprites/lopez.png", // Modify this to match your file path
+          src: "/images/gameimages/lopezanimation.png",
           width: 46,
           height: 52,
           idle: { row: 6, frames: 3, idleFrame: {column: 1, frames: 0} },
@@ -122,13 +122,13 @@ image: /images/platformer/backgrounds/hills.png
       },
       enemies: {
         goomba: {
-          src: "/images/platformer/sprites/goomba.png",
+          src: "/images/mario/goomba.png",
           width: 448,
           height: 452,
         }
       },
       scaffolds: {
-          brick: { src: "/images/platformer/obstacles/brick.png" }, //need to import image
+          brick: { src: "/images/mario/brick_wall.png" }, 
       },
     };
 
