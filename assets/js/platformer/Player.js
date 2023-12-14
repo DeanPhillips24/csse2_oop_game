@@ -209,7 +209,7 @@ export class Player extends Character{
                 delete this.pressedKeys[event.key];
             }
             this.setAnimation(key);  
-            // player idle
+            
             this.isIdle = true;     
         }
     }
