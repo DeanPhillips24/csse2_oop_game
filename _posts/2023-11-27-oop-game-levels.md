@@ -68,16 +68,16 @@ image: /images/mario/hills.png
         tube: { src: "/images/mario/tube.png" },
       },
       platforms: {
-        grass: { src: "/images/mario/pigfarm.png"},
+        grass: { src: "/images/platformer/pigfarm.png"},
         alien: { src: "/images/mario/alien.png" },
-        carpet: { src: "/images/mario/carpet.jpeg"}
+        carpet: { src: "/images/platformer/platforms/carpet.jpeg"}
       },
       backgrounds: {
-        start: { src: "/images/mario/Joke.jpg" },
-        hills: { src: "/images/mario/GD_Background.png" },
-        planet: { src: "/images/mario/Del_Norte.png" },
-        castles: { src: "/images/mario/backgrounds/castles.png" },
-        end: { src: "/images/mario/backgrounds/game_over.png" }
+        start: { src: "/images/platformer/backgrounds/Joke.jpg" },
+        hills: { src: "/images/platformer/backgrounds/GD_Background.png" },
+        planet: { src: "/images/platformer/backgrounds/Del_Norte.png" },
+        castles: { src: "/images/platformer/background/castles.png" },
+        end: { src: "/images/mario/game_over.png" }
       },
       players: {
         mario: {
