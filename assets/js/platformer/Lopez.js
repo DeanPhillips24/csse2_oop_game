@@ -2,7 +2,7 @@ import GameEnv from './GameEnv.js';
 import Character from './Character.js';
 import GameControl from './GameControl.js'
 
-export class Player2 extends Character{ //for lopez code
+export class Lopez extends Character{
     // constructors sets up Character object 
     constructor(canvas, image, speedRatio, playerData,speedLimit){
         super(canvas, 
@@ -229,16 +229,16 @@ export class Player2 extends Character{ //for lopez code
         }
 
         if (this.collisionData.touchPoints.other.id === "enemy") {
-            if (this.y >= this.bottom){ //you died
-                //reload current level (death)
+            if (this.y >= this.bottom){ //y Death
+                // reload current level 
                 GameControl.transitionToLevel(GameEnv.levels[GameEnv.levels.indexOf(GameEnv.currentLevel)]);
             }
             else{//you kill goomba
                 this.y -= this.bottom*.2;//bounce
-                for(let i = 0; i<GameEnv.gameObjects.length;i++){//loop through current gameObjects
-                    if(GameEnv.gameObjects[i].isGoomba){ //look for object with (isGoomba==true) tag
-                        GameEnv.gameObjects[i].canvas.remove(); //remove goomba sprite from current level
-                        GameEnv.gameObjects.splice(i,1); //remove goomba object from current level
+                for(let i = 0; i<GameEnv.gameObjects.length;i++){
+                    if(GameEnv.gameObjects[i].isGoomba){ // Find object with (isGoomba==true) tag
+                        GameEnv.gameObjects[i].canvas.remove(); // Remove goomba sprite from level 
+                        GameEnv.gameObjects.splice(i,1); // Remove goomba object from level
                     }
                 }
             }
@@ -283,4 +283,4 @@ export class Player2 extends Character{ //for lopez code
 }
 
 
-export default Player2;
+export default Lopez;
