@@ -74,8 +74,8 @@ image: /images/mario/hills.png
       },
       backgrounds: {
         start: { src: "/images/platformer/backgrounds/antoine.jpg" },
-        hills: { src: "/images/platformer/backgrounds/escapemcobby.png" },
-        planet: { src: "/images/platformer/backgrounds/legaFortnite.png" },
+        hills: { src: "/images/platformer/backgrounds/donaldTrumpmugshot.jpeg"},
+        planet: { src: "/images/platformer/backgrounds/marioBackground20.jpeg" },
         castles: { src: "/images/platformer/background/castles.png" },
         end: { src: "/images/mario/game_over.png" }
       },
