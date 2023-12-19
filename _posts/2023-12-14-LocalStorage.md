@@ -10,7 +10,7 @@ type: devops
       <tr id="pasteAfter">
         <th>#</th>
           <th>name</th>
-          <th>age</th>
+          <th>level</th>
       </tr>
       <tr>
         <td><button id="incrementRow">+</button></td>
