@@ -1,8 +1,8 @@
 import GameEnv from './GameEnv.js';
-import Character from './Character.js';
+import Player from './Player.js';
 import GameControl from './GameControl.js'
 
-export class Lopez extends Character{
+export class Lopez extends Player {
     // constructors sets up Character object 
     constructor(canvas, image, speedRatio, playerData,speedLimit){
         super(canvas, 

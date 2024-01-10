@@ -5,7 +5,7 @@ import Player from './Player.js';
 import Tube from './Tube.js';
 import Goomba from './Goomba.js'
 import Scaffold from './Scaffold.js';
-import Player2 from './Lopez.js';
+import Lopez from './Lopez.js';
 
 // Store the assets and attributes of the Game at the specific GameLevel.
 class GameLevel {
@@ -83,7 +83,7 @@ class GameLevel {
                     new Player(playerCanvas, loadedImages[i], playerSpeedRatio, this.playerData);
                 }
                 else{
-                    new Player2(playerCanvas, loadedImages[i], playerSpeedRatio, this.playerData);
+                    new Lopez(playerCanvas, loadedImages[i], playerSpeedRatio, this.playerData);
                 }
                 i++;
             }
