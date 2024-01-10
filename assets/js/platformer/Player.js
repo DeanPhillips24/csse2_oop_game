@@ -4,7 +4,7 @@ import GameControl from './GameControl.js'
 
 export class Player extends Character{
     // constructors sets up Character object 
-    constructor(canvas, image, speedRatio, playerData){
+    constructor(canvas, image, speedRatio, playerData, speedLimit){
         super(canvas, 
             image, 
             speedRatio,

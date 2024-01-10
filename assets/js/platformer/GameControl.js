@@ -1,4 +1,5 @@
 import GameEnv from './GameEnv.js';
+import GameLevel from './GameLevel.js';
 
 /* GameControl is an object literal.
  *   Informerly GameControl looks like defining a variable with methods.
